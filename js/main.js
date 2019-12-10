@@ -33,7 +33,7 @@ function initMap() {
     center: new google.maps.LatLng(40.410148, -3.7194382)
   });
   //   geoFindMe();
-  new BlueDot(map);
+  new BlueDot(map, { icon: "./icons/cat.png" });
 
   var infoWindow = new google.maps.InfoWindow({
     content: ""
@@ -52,7 +52,10 @@ function initMap() {
     });
     marker.addListener("click", () => {
       infoWindow.setContent(
-        `<b>${dataJson[i].title}</b><br>${dataJson[i].organization.schedule}`
+        `<b>${dataJson[i].title}</b><br>${dataJson[i].organization.schedule}
+        <br>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=${dataJson[i].location.latitude},${dataJson[i].location.longitude}">Navigate to this</a>
+        `
       );
       infoWindow.open(map, marker);
     });
