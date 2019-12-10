@@ -1,0 +1,9 @@
+{
+  "name": "study-rooms-madrid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/googlemaps": "^3.38.1"
+  }
+}

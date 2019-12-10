@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="./data.js"></script>
+    <script src="./blue-dot.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="./main.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB17n4MJL2XJJjSdQdywIeL67iVe5E83C8&callback=initMap"
+    ></script>
+  </body>
+</html>
